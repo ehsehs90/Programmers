@@ -14,8 +14,6 @@ public class 같은숫자는싫어 {
 		int num = 10;
 		List<Integer> array = new ArrayList<Integer>();
 
-//		int[] a = Arrays.
-
 		for (int n : arr) {
 			if (num != n) {
 				array.add(n);
@@ -23,11 +21,15 @@ public class 같은숫자는싫어 {
 
 			}
 		}
-		System.out.println(array);
 
-		for (int i = 0; i < array.size() - 1; i++) {
+		answer = new int[array.size()];
+		//System.out.println(array.size());
+		for (int i = 0; i < array.size(); i++) {
 			answer[i] = array.get(i);
 		}
+//		for(int i=0;i<array.size(); i++) {
+//			System.out.println(answer[i]);
+//		}
 
 		return answer;
 
